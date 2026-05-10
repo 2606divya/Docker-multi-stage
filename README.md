@@ -1,5 +1,5 @@
 # Docker-multi-stage
-# -------- Build Stage --------
+-------- Build Stage --------
 FROM maven:3.9.6-eclipse-temurin-17 AS builder
 
 WORKDIR /app
@@ -8,7 +8,7 @@ COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-# -------- Run Stage --------
+-------- Run Stage --------
 FROM eclipse-temurin:17-jdk-jammy
 
 WORKDIR /app
