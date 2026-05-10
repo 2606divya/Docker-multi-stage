@@ -1,0 +1,9 @@
+java-multistage-app/
+│
+├── pom.xml
+└── src/
+    └── main/
+        └── java/
+            └── com/
+                └── example/
+                    └── App.java
